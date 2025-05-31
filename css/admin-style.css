@@ -1,0 +1,250 @@
+/* WP Reset Core Admin Sayfası Stilleri */
+.wprc-wrap {
+    margin-top: 20px;
+}
+
+.wprc-wrap h1 {
+    border-bottom: 1px solid #ccd0d4;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.wprc-section {
+    background-color: #fff;
+    border: 1px solid #ccd0d4;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
+}
+
+.wprc-warning-section {
+    border-left: 4px solid #d63638;
+    /* Kırmızı uyarı rengi */
+}
+
+.wprc-warning-section h2 {
+    color: #d63638;
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.wprc-warning-section h2 .dashicons {
+    vertical-align: middle;
+    font-size: 1.2em;
+    /* İkonu biraz büyüt */
+}
+
+.wprc-warning-section ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.wprc-warning-section ul li {
+    margin-bottom: 8px;
+}
+
+.wprc-confirmation-section h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.wprc-button-danger {
+    background-color: #d63638 !important;
+    /* WordPress'in kendi stillerini ezmek için !important */
+    border-color: #b02a2c !important;
+    color: #fff !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+.wprc-button-danger:hover,
+.wprc-button-danger:focus {
+    background-color: #b02a2c !important;
+    border-color: #8c2323 !important;
+    color: #fff !important;
+}
+
+.wprc-button-danger .dashicons {
+    vertical-align: text-bottom;
+    margin-right: 5px;
+}
+
+/* Buton disabled durumu için stil */
+.wprc-wrap button[disabled],
+.wprc-wrap button.button-disabled {
+    background-color: #d1d1d1 !important;
+    border-color: #c1c1c1 !important;
+    color: #7e7e7e !important;
+    cursor: not-allowed !important;
+}
+
+/* Notice mesajları için biraz daha fazla boşluk */
+.wrap .notice {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* === Sekmeli Arayüz (Tabs) === */
+.wprc-tabs-wrapper {
+    margin-top: 20px;
+    background: #f6f7f7;
+    border-radius: 6px 6px 0 0;
+    border: 1px solid #ccd0d4;
+    border-bottom: none;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+}
+
+.wprc-tab {
+    padding: 12px 24px;
+    cursor: pointer;
+    background: #f6f7f7;
+    color: #2271b1;
+    border: none;
+    border-right: 1px solid #ccd0d4;
+    font-size: 1em;
+    font-weight: 500;
+    outline: none;
+    transition: background 0.2s, color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.wprc-tab:last-child {
+    border-right: none;
+}
+
+.wprc-tab.active,
+.wprc-tab:focus {
+    background: #fff;
+    color: #1d2327;
+    border-bottom: 2px solid #2271b1;
+    z-index: 2;
+}
+
+.wprc-tab:hover:not(.active) {
+    background: #eaf6fb;
+    color: #135e96;
+}
+
+.wprc-tab-content {
+    display: none;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    padding: 24px 20px 20px 20px;
+    margin-bottom: 30px;
+}
+
+.wprc-tab-content.active {
+    display: block;
+}
+
+/* Mobil uyum: sekmeler yatay kaydırılabilir */
+@media (max-width: 600px) {
+    .wprc-tabs-wrapper {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        border-radius: 0;
+    }
+
+    .wprc-tab {
+        min-width: 140px;
+        font-size: 0.95em;
+        padding: 10px 12px;
+    }
+
+    .wprc-tab-content {
+        padding: 16px 8px 12px 8px;
+    }
+}
+
+/* === Yeni Modern Footer === */
+.wprc-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f6f7f7;
+    border-top: 1px solid #ccd0d4;
+    padding: 28px 12px 18px 12px;
+    font-size: 1em;
+    color: #444;
+    border-radius: 0 0 8px 8px;
+    margin-top: 40px;
+    gap: 12px;
+}
+
+.wprc-footer-logo {
+    height: 48px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.wprc-footer-icons {
+    display: flex;
+    gap: 36px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.wprc-footer-iconbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    min-width: 80px;
+}
+
+.wprc-footer-icon {
+    background: #2271b1;
+    color: #fff;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7em;
+    margin-bottom: 2px;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(34, 113, 177, 0.08);
+}
+
+.wprc-footer-icon:hover {
+    background: #135e96;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(34, 113, 177, 0.18);
+}
+
+.wprc-footer-label {
+    font-size: 0.97em;
+    color: #2271b1;
+    text-align: center;
+    word-break: break-all;
+    margin-top: 2px;
+}
+
+@media (max-width: 600px) {
+    .wprc-footer-icons {
+        gap: 18px;
+    }
+
+    .wprc-footer-iconbox {
+        min-width: 60px;
+    }
+
+    .wprc-footer-logo {
+        height: 38px;
+    }
+}
+
+/* FontAwesome ikonları için hizalama */
+.wprc-tab .fa,
+.wprc-tab .fab,
+.wprc-tab .fas {
+    font-size: 1.1em;
+    margin-right: 6px;
+}
